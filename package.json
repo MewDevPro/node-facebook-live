@@ -1,0 +1,29 @@
+{
+  "name": "facebook-live",
+  "version": "1.0.0",
+  "description": "A module to share a video to Facebook Live Streaming",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MewDevPro/node-facebook-live.git"
+  },
+  "keywords": [
+    "facebook",
+    "live",
+    "node",
+    "ffmpeg"
+  ],
+  "author": "MewDevPro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MewDevPro/node-facebook-live/issues"
+  },
+  "homepage": "https://github.com/MewDevPro/node-facebook-live#readme",
+  "dependencies": {
+    "ffmpeg-static": "^5.0.2",
+    "ytdl-core": "^4.11.0"
+  }
+}
