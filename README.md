@@ -20,7 +20,7 @@ var FacebookLive = require('facebook-live');
     .setYouTube('YouTube video URL') // disable this when using setVideo()
     .setMaxRate('1000k')
     .setAudioBitrate('128k')
-    .setScale('1280', '720')
+    .setVideoScale('1280', '720')
     .run()
 })();
 ```
