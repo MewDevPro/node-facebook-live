@@ -18,6 +18,9 @@ var FacebookLive = require('facebook-live');
     .setSecretKey('Your secret stream key')
     .setVideo('Video path') // disable this when using setYouTube()
     .setYouTube('YouTube video URL') // disable this when using setVideo()
+    .setMaxRate('1000k')
+    .setAudioBitrate('128k')
+    .setScale('1280', '720')
     .run()
 })();
 ```
