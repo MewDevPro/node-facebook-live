@@ -11,9 +11,9 @@ npm install https://github.com/MewDevPro/node-facebook-live.git
 
 ```js
 var FacebookLive = require('facebook-live');
-
+var live = new FacebookLive();
 (async() => {
-  await new FacebookLive()
+  await live
     .setRTMP('Facebook RTMP URL')
     .setSecretKey('Your secret stream key')
     .setVideo('Video path') // disable this when using setYouTube()
@@ -23,5 +23,6 @@ var FacebookLive = require('facebook-live');
     .setVideoScale('1280', '720')
     .setDir(__dirname) // default is process.cwd()
     .run()
+  await live.autoClean() // auto delete files after streaming
 })();
 ```
