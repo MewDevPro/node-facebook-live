@@ -21,6 +21,7 @@ var FacebookLive = require('facebook-live');
     .setMaxRate('1000k')
     .setAudioBitrate('128k')
     .setVideoScale('1280', '720')
+    .setDir(__dirname) // default is process.cwd()
     .run()
 })();
 ```
