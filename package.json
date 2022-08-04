@@ -1,6 +1,6 @@
 {
   "name": "facebook-live",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A module to share a video to Facebook Live Streaming",
   "main": "index.js",
   "scripts": {

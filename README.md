@@ -16,13 +16,13 @@ var live = new FacebookLive();
   await live
     .setRTMP('Facebook RTMP URL')
     .setSecretKey('Your secret stream key')
-    .setVideo('Video path') // disable this when using setYouTube()
+    .setDir(__dirname) // default is process.cwd()
+    .setVideo('/path/to/video') // disable this when using setYouTube()
     .setYouTube('YouTube video URL') // disable this when using setVideo()
     .setMaxRate('1000k')
     .setAudioBitrate('128k')
     .setVideoScale('1280', '720')
-    .setDir(__dirname) // default is process.cwd()
-    .run()
+  await live.run()
   await live.autoClean() // auto delete files after streaming
-})();
+})().catch(console.error);
 ```
